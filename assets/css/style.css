@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    border: solid rgb(182, 37, 196) 2px;
+    padding: 15px;
+    background-image: linear-gradient(200, orange, red);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 200px;
+    margin: 10px;
+    transition: height 2s, width 1s;
+    padding: 0;
+
+}
+
+.logo:hover {
+    height: 90px;
+    width: 250px;
+}
+
+.navbar>ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    justify-self: center;
+}
+
+.navbar>ul>li {
+    position: relative;
+}
+
+.navbar>ul>li:hover ul {
+    max-height: 300px;
+    transition: 0.5s;
+}
+
+.navbar ul li a {
+    border: solid rgb(16, 18, 167) 2px;
+    display: block;
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navbar>ul>li>ul {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    list-style-type: none;
+    background-color: rgba(243, 65, 65, 0.541);
+    left: 35px;
+}
+
+.portadaIndex {
+    background-image: url(../img/supermercado-2637227.webp);
+    background-size: cover;
+    font-size: 30px;
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 2s;
+}
+
+.portadaIndex-info {
+    border: solid rgb(25, 154, 214) 2px;
+    padding: 40px;
+    margin-left: 10px;
+    align-items: center;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    outline-offset: -3px;
+    transition: all 1s;
+}
+
+.titulo {
+    border: solid green 2px;
+    padding: auto;
+    position: absolute;
+    ;
+}
+
+.cards {
+    border: solid rgb(59, 236, 59) 2px;
+    padding: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    height: 150px;
+    width: 50px;
+    text-align: left;
+}
+
+.btn {
+    display: block;
+    width: 90px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 30, 60);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+
+
+}
+
+.adds {
+    border: solid green 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.add {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+
+.add img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+
+
+
+}
+
+.add h4 {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+    padding: 1%;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(255, 254, 254);
+    background-color: rgba(7, 0, 0, 0.459);
+
+}
+
+.marcas_destacadas {
+    border: solid red 4px;
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: left;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+
+}
+
+.treintaoff {
+    border: solid yellow 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cincuentaoff {
+    border: solid pink 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+
+}
+
+.promoMundial {
+    border: solid blue 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    letter-spacing: 5px;
+    text-align: center;
+
+}
+
+.formulario {
+    margin: 0 auto;
+    padding: 15px;
+    color: #999;
+    border-radius: 3px;
+    width: 350px;
+    background-color: rgba(235, 37, 37, 0.192);
+    position: relative;
+    right: 1800px;
+    top: 300px;
+
+}
+
+.campo {
+    border: solid 1px #ccc;
+    padding: 10px;
+    width: 280px;
+    text-align: right
+}
+
+.btn-red {
+    display: block;
+    width: 80px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 30, 60);
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 115px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
