@@ -1,41 +1,56 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
 }
-.navbar{
+
+body {
+    max-width: 100%;
+}
+
+.navbar {
     border: solid rgb(182, 37, 196) 2px;
     padding: 15px;
     background-image: linear-gradient(to left, orange, red);
     display: flex;
     justify-content: space-between;
-    
+
 }
-.logo{
+
+.logo {
     width: 200px;
     margin: 10px;
     transition: height 2s, width 1s;
     padding: 0;
-    
+
 }
-.logo:hover{
-    height: 90px; width: 250px;
+
+.logo:hover {
+    height: 90px;
+    width: 250px;
 }
-.navbar > ul {
+
+.navbar>ul {
     list-style: none;
     display: flex;
     justify-content: end;
     justify-self: center;
 }
-.navbar > ul > li{
+
+.navbar>ul>li {
     position: relative;
 }
-.navbar > ul > li:hover ul{
+
+.navbar>ul>li:hover ul {
     max-height: 300px;
     transition: 0.5s;
 }
-.navbar  ul  li  a{
+
+.navbar ul li a {
     border: solid rgb(16, 18, 167) 2px;
     display: block;
     text-decoration: none;
@@ -43,7 +58,8 @@
     font-size: 20px;
     padding: 20px;
 }
-.navbar > ul > li > ul{
+
+.navbar>ul>li>ul {
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -52,7 +68,7 @@
     left: 35px;
 }
 
-.portadaIndex{
+.portadaIndex {
     background-image: url(../img/supermercado-2637227.webp);
     background-size: cover;
     font-size: 30px;
@@ -64,7 +80,7 @@
     transition: top 2s;
 }
 
-.portadaIndex-info{
+.portadaIndex-info {
     border: solid rgb(25, 154, 214) 2px;
     padding: 40px;
     margin-left: 10px;
@@ -74,53 +90,55 @@
     outline-offset: -3px;
     transition: all 1s;
 }
+
 .titulo {
     border: solid green 2px;
     padding: auto;
-    position: absolute;
     ;
 }
 
-.cards{
+.cards {
     border: solid rgb(59, 236, 59) 2px;
     padding: 55px;
     display: flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.card{
+
+.card {
     box-sizing: border-box;
     display: flex;
     height: 150px;
-    width: 50px;
     text-align: left;
 }
-.btn{
+
+.btn {
     display: block;
     width: 90px;
     margin-top: 10px;
     text-align: center;
     padding: 5px 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: inherit;
     font-size: 14px;
     border: none;
     border-radius: 5px;
     background-color: rgb(255, 30, 60);
     color: rgb(255, 255, 255);
-    text-align:center;
+    text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
-    
+
 
 }
 
-.adds{
+.adds {
     border: solid green 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
-.add{
+
+.add {
     display: flex;
     width: 150px;
     height: 100px;
@@ -129,14 +147,16 @@
     margin: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
 }
+
 .add img {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    
 
-    
+
+
 }
+
 .add h4 {
     position: absolute;
     width: 100%;
@@ -146,10 +166,10 @@
     text-align: center;
     color: rgb(255, 254, 254);
     background-color: rgba(7, 0, 0, 0.459);
-    
+
 }
 
-.marcas_destacadas{
+.marcas_destacadas {
     border: solid red 4px;
     position: relative;
     display: flex;
@@ -159,18 +179,19 @@
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    
+
 
 }
 
-.treintaoff{
+.treintaoff {
     border: solid yellow 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-   
+
 }
-.cincuentaoff{
+
+.cincuentaoff {
     border: solid pink 2px;
     display: flex;
     flex-wrap: wrap;
@@ -179,17 +200,17 @@
 
 }
 
-.promoMundial{
+.promoMundial {
     border: solid blue 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     letter-spacing: 5px;
     text-align: center;
-    
+
 }
 
-.formulario{
+.formulario {
     margin: 0 auto;
     padding: 15px;
     color: #999;
@@ -202,18 +223,15 @@
 
 }
 
-.campo{
+.campo {
     border: solid 1px #ccc;
     padding: 10px;
     width: 280px;
     text-align: right
-    
-
-    
 }
 
-.btn-red{
-    display:block;
+.btn-red {
+    display: block;
     width: 80px;
     margin-top: 10px;
     padding: 10px 10px;
@@ -228,3 +246,22 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
 }
 
+.banner-carousel {
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 0.8rem;
+    min-height: 54px;
+}
+
+.card p {
+    min-height: 54px;
+}
