@@ -7,18 +7,15 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
-body {
+.body{
     max-width: 100%;
+    margin: 0;
 }
-
-.navbar {
-    border: solid rgb(182, 37, 196) 2px;
+.barra_de_navegacion{
     padding: 15px;
     background-image: linear-gradient(to left, orange, red);
-    display: flex;
-    justify-content: space-between;
-
+    display: flex
+    
 }
 
 .logo {
@@ -34,24 +31,44 @@ body {
     width: 250px;
 }
 
-.navbar>ul {
+.barra_de_navegacion>ul {
     list-style: none;
     display: flex;
     justify-content: end;
-    justify-self: center;
+    justify-self: right;
 }
 
-.navbar>ul>li {
+.barra_de_navegacion>ul>li {
     position: relative;
 }
 
-.navbar>ul>li:hover ul {
+.barra_de_navegacion>ul>li:hover ul {
     max-height: 300px;
     transition: 0.5s;
 }
+.tres_dos{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.dos_uno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
 
-.navbar ul li a {
-    border: solid rgb(16, 18, 167) 2px;
+}
+.futbol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
+.barra_de_navegacion ul li a {
     display: block;
     text-decoration: none;
     color: azure;
@@ -59,7 +76,7 @@ body {
     padding: 20px;
 }
 
-.navbar>ul>li>ul {
+.barra_de_navegacion>ul>li>ul {
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -81,7 +98,6 @@ body {
 }
 
 .portadaIndex-info {
-    border: solid rgb(25, 154, 214) 2px;
     padding: 40px;
     margin-left: 10px;
     align-items: center;
@@ -89,23 +105,56 @@ body {
     color: rgb(255, 255, 255);
     outline-offset: -3px;
     transition: all 1s;
+    
 }
 
 .titulo {
-    border: solid green 2px;
     padding: auto;
-    ;
 }
 
-.cards {
-    border: solid rgb(59, 236, 59) 2px;
-    padding: 55px;
+.subtitulo{
+    text-align:justify;
+    height: 30px;
+    padding: 0;
+    margin: 10px;
+    color:rgb(0, 0, 0);
+    
+}
+.subtitulo2{
+        text-align: justify;
+        height: 40px;
+        padding: 30px;
+        margin: 10px;
+        color: rgba(0, 0, 0, 0.644);
+    
+}
+.subtitulo3{
+    text-align: justify;
+        height: 30px;
+        padding: 10px;
+        margin: 10px;
+        color: rgb(0, 0, 0);
+}
+
+.tarjeta_50_off{
+    box-sizing: border-box;
+    display: flex;
+    height: 150px;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+   
+
+.tarjetas {
+    padding: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.card {
+.tarjeta {
     box-sizing: border-box;
     display: flex;
     height: 150px;
@@ -131,7 +180,6 @@ body {
 }
 
 .adds {
-    border: solid green 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -170,21 +218,35 @@ body {
 }
 
 .marcas_destacadas {
-    border: solid red 4px;
     position: relative;
     display: flex;
     width: 50px;
-    height: 50px;
+    height: 70px;
     justify-content: left;
-    font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
 
+}
+.marcas_destacadas2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    
+
+}
+.imperdibles{
+    display: flex;
+    width: auto;
+    padding: 20px;
+    justify-content:space-around;
+    margin: 2rem auto;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 
 }
 
+
 .treintaoff {
-    border: solid yellow 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -192,7 +254,6 @@ body {
 }
 
 .cincuentaoff {
-    border: solid pink 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -201,7 +262,6 @@ body {
 }
 
 .promoMundial {
-    border: solid blue 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -257,11 +317,21 @@ body {
     align-items: center;
 }
 
-.card h3 {
+.tarjeta h3 {
     font-size: 0.8rem;
     min-height: 54px;
 }
 
-.card p {
+.tarjeta p {
     min-height: 54px;
 }
+
+.mapa{
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 3px;
+    width: 350px;
+    position: relative;
+    right: 1813px;
+    top: 300px;
+    }
