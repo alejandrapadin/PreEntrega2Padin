@@ -12,13 +12,13 @@
     margin: 0;
 }
 .barra_de_navegacion{
-    padding: 15px;
+    padding: 0;
     background-image: linear-gradient(to left, orange, red);
     display: flex
     
 }
 
-.logo {
+.logo{
     width: 200px;
     margin: 10px;
     transition: height 2s, width 1s;
@@ -26,16 +26,21 @@
 
 }
 
-.logo:hover {
+.logo:hover{
     height: 90px;
     width: 250px;
 }
 
 .barra_de_navegacion>ul {
     list-style: none;
-    display: flex;
-    justify-content: end;
-    justify-self: right;
+    display:flex;
+    align-items:center;
+    font-size: 5px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    text-align: end;
+    justify-content: right;
+    
 }
 
 .barra_de_navegacion>ul>li {
@@ -69,42 +74,44 @@
     margin: 20px;
 }
 .barra_de_navegacion ul li a {
-    display: block;
+    display: flex;
     text-decoration: none;
     color: azure;
     font-size: 20px;
     padding: 20px;
+    justify-content: space-between;
 }
 
 .barra_de_navegacion>ul>li>ul {
+    padding: 0;
     max-height: 0;
     overflow: hidden;
     position: absolute;
     list-style-type: none;
     background-color: rgba(243, 65, 65, 0.541);
-    left: 35px;
+    
 }
 
 .portadaIndex {
     background-image: url(../img/supermercado-2637227.webp);
     background-size: cover;
-    font-size: 30px;
+    font-size: 60px;
     width: 100%;
     height: 1200px;
     display: flex;
-    justify-content: center;
+    justify-content: l;
     align-items: center;
     transition: top 2s;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
 }
 
 .portadaIndex-info {
-    padding: 40px;
-    margin-left: 10px;
-    align-items: center;
-    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    align-items:center;
     color: rgb(255, 255, 255);
-    outline-offset: -3px;
-    transition: all 1s;
+    
     
 }
 
@@ -121,19 +128,19 @@
     
 }
 .subtitulo2{
-        text-align: justify;
-        height: 40px;
-        padding: 30px;
-        margin: 10px;
-        color: rgba(0, 0, 0, 0.644);
+    text-align: justify;
+    height: 40px;
+    padding: 30px;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.644);
     
 }
 .subtitulo3{
     text-align: justify;
-        height: 30px;
-        padding: 10px;
-        margin: 10px;
-        color: rgb(0, 0, 0);
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
 }
 
 .tarjeta_50_off{
