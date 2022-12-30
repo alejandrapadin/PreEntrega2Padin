@@ -7,11 +7,12 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
 .body{
     max-width: 100%;
     margin: 0;
 }
-.barra_de_navegacion{
+.barra{
     padding: 0;
     background-image: linear-gradient(to left, orange, red);
     display: flex
@@ -31,23 +32,23 @@
     width: 250px;
 }
 
-.barra_de_navegacion>ul {
+.barra > ul {
     list-style: none;
     display:flex;
-    align-items:center;
+    justify-content: space-between;
     font-size: 5px;
     padding-top: 15px;
     flex-wrap: wrap;
     text-align: end;
-    justify-content: right;
+    
     
 }
 
-.barra_de_navegacion>ul>li {
+.barra > ul > li {
     position: relative;
 }
 
-.barra_de_navegacion>ul>li:hover ul {
+.barra > ul > li:hover ul {
     max-height: 300px;
     transition: 0.5s;
 }
@@ -73,16 +74,18 @@
     padding: 10px;
     margin: 20px;
 }
-.barra_de_navegacion ul li a {
+.barra ul li a {
     display: flex;
     text-decoration: none;
     color: azure;
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     justify-content: space-between;
+    width: 100%;
+   
 }
 
-.barra_de_navegacion>ul>li>ul {
+.barra > ul > li > ul {
     padding: 0;
     max-height: 0;
     overflow: hidden;
@@ -158,7 +161,7 @@
     padding: 150px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .tarjeta {
@@ -278,15 +281,14 @@
 }
 
 .formulario {
-    margin: 0 auto;
+    margin: 0;
     padding: 15px;
-    color: #999;
-    border-radius: 3px;
     width: 350px;
     background-color: rgba(235, 37, 37, 0.192);
     position: relative;
     right: 1800px;
     top: 300px;
+    justify-content: end;
 
 }
 
@@ -334,11 +336,10 @@
 }
 
 .mapa{
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 3px;
-    width: 350px;
-    position: relative;
-    right: 1813px;
-    top: 300px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    margin: 20px;
+}
+    
