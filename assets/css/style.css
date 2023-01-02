@@ -5,26 +5,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
-.body{
-    max-width: 100%;
-    margin: 0;
-}
-.barra{
-    padding: 0;
+.barra {
     background-image: linear-gradient(to left, orange, red);
-    display: flex
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo{
     width: 200px;
     margin: 10px;
     transition: height 2s, width 1s;
-    padding: 0;
-
 }
 
 .logo:hover{
@@ -35,13 +27,9 @@
 .barra > ul {
     list-style: none;
     display:flex;
-    justify-content: space-between;
     font-size: 5px;
     padding-top: 15px;
-    flex-wrap: wrap;
-    text-align: end;
-    
-    
+    flex-wrap: wrap; 
 }
 
 .barra > ul > li {
@@ -52,28 +40,6 @@
     max-height: 300px;
     transition: 0.5s;
 }
-.tres_dos{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-}
-.dos_uno{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-
-}
-.futbol{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 20px;
-}
 .barra ul li a {
     display: flex;
     text-decoration: none;
@@ -82,7 +48,6 @@
     padding: 20px;
     justify-content: space-between;
     width: 100%;
-   
 }
 
 .barra > ul > li > ul {
@@ -91,8 +56,7 @@
     overflow: hidden;
     position: absolute;
     list-style-type: none;
-    background-color: rgba(243, 65, 65, 0.541);
-    
+    background-color: rgba(243, 65, 65, 0.541);  
 }
 
 .portadaIndex {
@@ -108,14 +72,47 @@
     padding: 0;
     font-family: 'Poppins',sans-serif;
 }
-
 .portadaIndex-info {
     padding: 0px;
     margin: 0px;
     align-items:center;
     color: rgb(255, 255, 255);
-    
-    
+}
+.btn {
+    display: block;
+    width: 90px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 30, 60);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39); 
+}
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 10px;
+    padding: 100px 0;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tarjeta {
+    height: 320px;
+}
+.tarjeta_50_off {
+    height: 320px;
+}
+.tarjeta_50_off > img {
+    border-radius: 20px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .titulo {
@@ -123,7 +120,7 @@
 }
 
 .subtitulo{
-    text-align:justify;
+    text-align: justify;
     height: 30px;
     padding: 0;
     margin: 10px;
@@ -146,54 +143,10 @@
     color: rgb(0, 0, 0);
 }
 
-.tarjeta_50_off{
-    box-sizing: border-box;
-    display: flex;
-    height: 150px;
-    text-align: left;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-   
-
-.tarjetas {
-    padding: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.tarjeta {
-    box-sizing: border-box;
-    display: flex;
-    height: 150px;
-    text-align: left;
-}
-
-.btn {
-    display: block;
-    width: 90px;
-    margin-top: 10px;
-    text-align: center;
-    padding: 5px 10px;
-    font-family: inherit;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(255, 30, 60);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
-
-
-}
-
 .adds {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .add {
@@ -210,9 +163,6 @@
     width: 100%;
     height: 90%;
     object-fit: cover;
-
-
-
 }
 
 .add h4 {
@@ -224,7 +174,7 @@
     text-align: center;
     color: rgb(255, 254, 254);
     background-color: rgba(7, 0, 0, 0.459);
-
+    
 }
 
 .marcas_destacadas {
@@ -233,7 +183,7 @@
     width: 50px;
     height: 70px;
     justify-content: left;
-
+    
 }
 .marcas_destacadas2{
     position: absolute;
@@ -242,7 +192,7 @@
     display: flex;
     align-items: center;
     
-
+    
 }
 .imperdibles{
     display: flex;
@@ -252,23 +202,7 @@
     margin: 2rem auto;
     margin-bottom: 50px;
     flex-wrap: wrap;
-
-}
-
-
-.treintaoff {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.cincuentaoff {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
-
+    
 }
 
 .promoMundial {
@@ -277,7 +211,7 @@
     justify-content: space-evenly;
     letter-spacing: 5px;
     text-align: center;
-
+    
 }
 
 .formulario {
@@ -289,7 +223,7 @@
     right: 1800px;
     top: 300px;
     justify-content: end;
-
+    
 }
 
 .campo {
@@ -317,15 +251,29 @@
 
 .banner-carousel {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 2rem auto;
 }
-
-.carousel {
-    display: flex;
-    align-items: center;
+.banner-carousel> img {
+    /* min-width: 40%; */
 }
 
+.productos {
+    display: flex;
+    overflow: scroll;
+}
+.producto {
+    display: flex;
+    min-width: 500px;
+}
+.producto > img {
+    width: 60%;
+    height: fit-content;
+    align-self: center;
+}
+.producto-info {
+    align-self: center;
+}
 .tarjeta h3 {
     font-size: 0.8rem;
     min-height: 54px;
@@ -342,4 +290,25 @@
     padding: 10px;
     margin: 20px;
 }
-    
+
+/* .tres_dos{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.dos_uno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.futbol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+} */
